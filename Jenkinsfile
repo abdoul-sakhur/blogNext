@@ -32,7 +32,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sh 'echo "Deploying..."'
+                sh 'echo "en cours de deploiement"'
                 // Add deployment steps here (e.g., deploying to a server or cloud platform)
             }
         }

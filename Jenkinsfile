@@ -14,26 +14,26 @@ pipeline {
 
         stage('Check NodeJS Version') {
             steps {
-                sh 'node -v'
-                sh 'npm -v'
+                bat 'node -v'
+                bat 'npm -v'
             }
         }
 
         stage('Install Dependencies') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
             }
         }
 
         stage('Build') {
             steps {
-                sh 'npm run build'
+                bat 'npm run build'
             }
         }
 
         stage('Deploy') {
             steps {
-                sh 'echo "Deploying..."'
+                bat 'echo "Deploying..."'
                 // Add deployment steps here
             }
         }

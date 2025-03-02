@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/ton-utilisateur/ton-repo.git'
+                git branch: 'main', url: 'https://github.com/abdoul-sakhur/blogNext.git'
             }
         }
         stage('Install Dependencies') {
